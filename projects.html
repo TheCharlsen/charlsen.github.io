@@ -8,12 +8,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;600;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/projectstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <header>
-            <a href="#" class="logo">(The)Charlsen</a>
+            <a href="index.html" class="logo">(The)Charlsen</a>
          <!--<a href="index.html"><img class="thecharlsenlogo" src="img/thecharlsen.png" alt="TheCharlsen"></a>-->  
             <nav>
                 <ul class="nav_links">
@@ -26,26 +26,15 @@
         </header>
         <section>
             <img src="img/background.png" alt="background" id="background">
-            <h2 id="text">Best Projects</h2>
-            <a href="projects.html" id="projectsbutton">Explore</a>
+            <div class="card">
+                <div class="face front">
+                        <img src="img/chid_round.png" alt="chid_round" class="chid">
+                        <h2 class="chidtitle">Charlsensideas</h2>
+                        <p class="chidparagraph">Charlsensideas a cool mod for Minecraft, where i add random features that come to my mind.</p>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/charlsensideas" class="chidbutton">Curseforge</a>
+                </div>
+            </div>
         </section>
-        <div class="sekundar">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, alias, obcaecati odio est temporibus unde optio aliquam repudiandae porro ducimus aperiam eum consectetur qui praesentium illo eos perferendis odit magni?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil autem assumenda quae architecto incidunt tempora earum impedit ab suscipit consequatur? Quos quam distinctio reprehenderit minima dolor mollitia cumque veritatis explicabo!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, alias, obcaecati odio est temporibus unde optio aliquam repudiandae porro ducimus aperiam eum consectetur qui praesentium illo eos perferendis odit magni?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil autem assumenda quae architecto incidunt tempora earum impedit ab suscipit consequatur? Quos quam distinctio reprehenderit minima dolor mollitia cumque veritatis explicabo!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, alias, obcaecati odio est temporibus unde optio aliquam repudiandae porro ducimus aperiam eum consectetur qui praesentium illo eos perferendis odit magni?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil autem assumenda quae architecto incidunt tempora earum impedit ab suscipit consequatur? Quos quam distinctio reprehenderit minima dolor mollitia cumque veritatis explicabo!
-            <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, alias, obcaecati odio est temporibus unde optio aliquam repudiandae porro ducimus aperiam eum consectetur qui praesentium illo eos perferendis odit magni?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil autem assumenda quae architecto incidunt tempora earum impedit ab suscipit consequatur? Quos quam distinctio reprehenderit minima dolor mollitia cumque veritatis explicabo!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, alias, obcaecati odio est temporibus unde optio aliquam repudiandae porro ducimus aperiam eum consectetur qui praesentium illo eos perferendis odit magni?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil autem assumenda quae architecto incidunt tempora earum impedit ab suscipit consequatur? Quos quam distinctio reprehenderit minima dolor mollitia cumque veritatis explicabo!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, alias, obcaecati odio est temporibus unde optio aliquam repudiandae porro ducimus aperiam eum consectetur qui praesentium illo eos perferendis odit magni?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil autem assumenda quae architecto incidunt tempora earum impedit ab suscipit consequatur? Quos quam distinctio reprehenderit minima dolor mollitia cumque veritatis explicabo!
-            <br><br>
-            </p>
-        </div>
         <footer>
             <div class="footer-content">
                 <h3>the charlsen</h3>
@@ -60,6 +49,15 @@
                 <p><a href="imprint.html">-Imprint-</a></p>
             </div>
         </footer>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"),{
+		    max: 25,
+		    speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+	        });
+        </script>
     </body>
 
 </html>

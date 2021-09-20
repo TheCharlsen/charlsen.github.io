@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: #edf0f1;
+    text-decoration: none; 
+    background-color:#11324D;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 3%;
+    background-color: #11324D;
+}
+
+.logo {
+    margin-right: auto;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*.thecharlsenlogo {
+    cursor: pointer;
+    background-color:#515751;
+    padding-top: 4px;
+}*/
+
+.nav_links {
+    list-style: none;
+    background-color:#11324D;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #C1CFC0;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(107 , 122, 161, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(107 , 122, 161, 0.6);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 40%;
+    width: 600px;
+    height: 600px;
+}
+
+.card {
+    position: absolute;
+    width: 758px;
+    height: 314px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.card .face.front .chidtitle {
+    position: absolute;
+    right: 130px;
+    top: 25px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.card .face.front .chidparagraph {
+    position: relative;
+    text-align: center;
+    right: 130px;
+    left: 1px;
+    top: 100px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card .face.front .chidbutton 
+{
+}
+
+.card .face.front .image {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    max-width: 64px;
+}
+
+
+.js-tilt-glare {
+    border-radius: 15px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #24252A;
+    height: auto;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #24252A;
+
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    background: #24252A;
+
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14 px;
+    background: #24252A;
+
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    background: #24252A;
+}
+
+.socials li {
+    margin: 0 10px;
+    background: #24252A;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    background: #24252A;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover i {
+   color: rgba(0 , 136, 169, 0.8);
+}
+
+.footer-bottom {
+    background: black;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom p a{
+    font-size: 10px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: grey;
+    background: black;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-bottom p a:hover {
+    color: #fff;
+}
+
+.footer-bottom img {
+    width: 60px;
+    height: 50px;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+}
+
+.a-fotter-bottom {
+    background: black;
+}
