@@ -89,6 +89,10 @@ section::before {
     height: 600px;
 }
 
+.projecttitle {
+    
+}
+
 .card {
     position: absolute;
     width: 758px;

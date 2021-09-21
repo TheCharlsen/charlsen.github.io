@@ -107,6 +107,13 @@ section #background {
     object-fit: cover;
 }
 
+.projecttitle {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 50px;
+}
+
 .card {
     position: absolute;
     width: 708px;
