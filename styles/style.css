@@ -98,13 +98,98 @@ section::before {
 }
 
 
-section img {
+section #background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.card {
+    position: absolute;
+    width: 708px;
+    height: 314px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+section .chidbutton {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.card .face.front .chidtitle {
+    position: absolute;
+    right: 130px;
+    top: 25px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.card .face.front .chidparagraph {
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    left: 285px;
+    top: 100px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card .face.front .chidbutton 
+{
+    position: absolute;
+    top: 200px;
+    left: 422px;
+    bottom: 75px;
+    width: 130px;
+    padding: 9px 20px;
+    background-color: rgba(107 , 122, 161, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+.card .face.front .chidbutton:hover {
+    background-color: rgba(107 , 122, 161, 0.6);
+}
+
+.card .face.front .chid {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    bottom: 32px;
+    width: 250px;
+
+}
+
+
+.js-tilt-glare {
+    border-radius: 15px;
 }
 
 #text {
